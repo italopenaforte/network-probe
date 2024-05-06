@@ -16,7 +16,7 @@ services:
   netprobe:
     restart: always
     container_name: netprobe-probe
-    image: "netprobe"
+    image: "darvin182/netprobe"
     volumes:
       - .:/netprobe_lite
     environment:
@@ -27,7 +27,7 @@ services:
   presentation:
     restart: always
     container_name: netprobe-presentation
-    image: "netprobe"
+    image: "darvin182/netprobe"
     volumes:
       - .:/netprobe_lite
     environment:
